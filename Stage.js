@@ -2,8 +2,8 @@
 // array of words, which is each an array of letters
 
 class Stage {
+
   constructor() {
-    console.log("Welcome to the show");
 
     this.wordMap = [];
     this.currentWordIndex = 0;
