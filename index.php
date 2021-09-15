@@ -71,7 +71,7 @@
     import {Keyboard} from "./Keyboard.js";
     import {Hands} from "./Hands.js";
 
-    let inStr = "the of and a to in is you that it he was for on are as with his they at be this have from or one had by word but not what all were we when your can said";
+    let inStr = "above about enough effects cherry player quitter quickly look don't point took picture people company because example ";
     // todo: later - use keyboard.filter to clean copy/pasted strings
 
     let keyboard = new Keyboard();
@@ -94,6 +94,9 @@
 
       document.addEventListener('keypress', (e) => {
 
+        let sound = new Audio('gunshot.mp3'); // dropdown this
+        sound.play();
+
         let key = String.fromCharCode(e.which).toLowerCase();
         let currentLetter = stage.getCurrentLetter().toLowerCase();
 
@@ -112,7 +115,6 @@
         hands.render();
       });
     });
-
 
   </script>
 </body>
